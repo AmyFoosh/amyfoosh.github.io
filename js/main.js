@@ -1,4 +1,9 @@
-let gameCanvas = document.getElementById("gameCanvas");
+let stage = document.getElementById("canvas");
+let ctx = stage.getContext("2d");
 
-gameCanvas.width = 200;
-gameCanvas.height = 200;
+let avatar = new Image();
+
+stage.width = 200;
+stage.height = 200;
+
+avatar.src = "img/avatar.png";
