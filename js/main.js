@@ -7,3 +7,5 @@ stage.width = 200;
 stage.height = 200;
 
 avatar.src = "img/avatar.png";
+
+ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
