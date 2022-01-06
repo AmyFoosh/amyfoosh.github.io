@@ -6,10 +6,10 @@ function init() {
    let avatar = new Image();
    avatar.src = "./img/avatar.png";
 
-   alert(stage.width);
-
    stage.width = 300;
    stage.height = 300;
+   
+   alert(stage.width);
 
    ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
 }
