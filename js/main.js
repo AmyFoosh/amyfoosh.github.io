@@ -2,10 +2,12 @@ let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
 let avatar = new Image();
+avatar.src = "img/avatar.png");
 
-stage.width = 200;
-stage.height = 200;
+function init() {
 
-avatar.src = "img/avatar.png";
+   stage.width = 200;
+   stage.height = 200;
 
-ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
+   ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
+}
