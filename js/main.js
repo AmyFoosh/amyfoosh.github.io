@@ -1,10 +1,10 @@
-let stage = document.getElementById("canvas");
-let ctx = stage.getContext("2d");
-
-let avatar = new Image();
-avatar.src = "./img/avatar.png";
-
 function init() {
+
+   let stage = document.getElementById("canvas");
+   let ctx = stage.getContext("2d");
+
+   let avatar = new Image();
+   avatar.src = "./img/avatar.png";
 
    alert(stage.width);
 
