@@ -6,7 +6,7 @@ avatar.src = "./img/avatar.png";
 
 function init() {
 
-   alert("Working!");
+   alert(stage.width);
 
    stage.width = 300;
    stage.height = 300;
