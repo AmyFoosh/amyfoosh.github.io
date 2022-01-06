@@ -6,8 +6,10 @@ avatar.src = "img/avatar.png";
 
 function init() {
 
-   stage.width = 200;
-   stage.height = 200;
+   alert("Working!");
+
+   stage.width = 300;
+   stage.height = 300;
 
    ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
 }
