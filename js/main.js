@@ -9,7 +9,7 @@ function init() {
    stage.width = 300;
    stage.height = 300;
    
-   alert(stage.width);
+   alert("yes");
 
    ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
 }
