@@ -2,7 +2,7 @@ let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
 let avatar = new Image();
-avatar.src = "img/avatar.png");
+avatar.src = "img/avatar.png";
 
 function init() {
 
