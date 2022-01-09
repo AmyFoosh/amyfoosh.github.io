@@ -1,3 +1,7 @@
+// --------------------------------------------
+
+// VARIABLES
+
 let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
@@ -10,11 +14,17 @@ ctx.canvas.height = window.innerHeight * 0.99;
 let avatar = new Image();
 avatar.src = "img/avatar.png";
 
+// --------------------------------------------
+
+// GAME LOOP
+
 setInterval(gameLoop, fps);
 
 function gameLoop() {
 
 }
+
+// --------------------------------------------
 
 function init() {
 
