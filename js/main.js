@@ -35,7 +35,7 @@ ctx.canvas.height = window.innerHeight * 0.99;
 let avatar = new Image();
 avatar.src = "img/avatar.png";
 
-let skull = new Sprite(avatar, 30, 30);
+let skull = new Sprite(avatar, 100, 100);
 
 // --------------------------------------------
 
