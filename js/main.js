@@ -51,12 +51,12 @@ function gameLoop() {
 
 function init() {
 
-   alert(skull.x);
+   alert(skull.img);
 
    // let posX = Math.random() * stage.width;
    // let posY = Math.random() * stage.height;
 
-   ctx.drawImage(avatar, 20, 20);
+   ctx.drawImage(avatar, skull.x, skull.y);
 }
 
 // --------------------------------------------
