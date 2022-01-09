@@ -9,5 +9,5 @@ avatar.src = "img/avatar.png";
 
 function init() {
 
-   
+   ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
 }
