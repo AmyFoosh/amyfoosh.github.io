@@ -9,5 +9,8 @@ avatar.src = "img/avatar.png";
 
 function init() {
 
-   ctx.drawImage(avatar, stage.width / 2, stage.height / 2);
+   let posX = Math.random() * stage.width;
+   let posY = Math.random() * stage.height;
+
+   ctx.drawImage(avatar, posX, posY);
 }
