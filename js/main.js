@@ -2,9 +2,11 @@
 
 // VARIABLES
 
+// Get canvas access and context to display content.
 let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
+// Set frame rate to 60 fps.
 let fps = 1000 / 60;
 
 // Resize canvas to match screen size.
