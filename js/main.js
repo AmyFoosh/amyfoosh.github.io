@@ -1,7 +1,7 @@
 let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
-ctx.canvas.width  = window.innerWidth * 0.99;
+ctx.canvas.width = window.innerWidth * 0.99;
 ctx.canvas.height = window.innerHeight * 0.99;
 
 let avatar = new Image();
