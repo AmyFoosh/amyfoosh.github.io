@@ -39,7 +39,7 @@ function init() {
    // let posX = Math.random() * stage.width;
    // let posY = Math.random() * stage.height;
 
-   ctx.drawImage(skull.img, skull.x, skull.y);
+   ctx.drawImage(avatar, skull.x, skull.y);
 }
 
 // --------------------------------------------
