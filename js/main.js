@@ -1,5 +1,20 @@
 // --------------------------------------------
 
+// CLASSES
+
+// This class is used to display objects on stage.
+class Sprite {
+
+   constructor(img, x, y) {
+
+      this.img = img;
+      this.x = x;
+      this.y = y;
+   }
+}
+
+// --------------------------------------------
+
 // ~ UTILS VARIABLES ~
 
 // Get canvas access and context to display content.
@@ -40,21 +55,6 @@ function init() {
    // let posY = Math.random() * stage.height;
 
    ctx.drawImage(avatar, skull.x, skull.y);
-}
-
-// --------------------------------------------
-
-// CLASSES
-
-// This class is used to display objects on stage.
-class Sprite {
-
-   constructor(img, x, y) {
-
-      this.img = img;
-      this.x = x;
-      this.y = y;
-   }
 }
 
 // --------------------------------------------
