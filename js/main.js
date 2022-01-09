@@ -35,7 +35,7 @@ ctx.canvas.height = window.innerHeight * 0.99;
 let avatar = new Image();
 avatar.src = "img/avatar.png";
 
-var skull = new Sprite(avatar, 0, 0);
+let skull = new Sprite(avatar, 0, 0);
 
 // --------------------------------------------
 
@@ -50,6 +50,8 @@ function gameLoop() {
 // --------------------------------------------
 
 function init() {
+
+   alert(skull.x);
 
    // let posX = Math.random() * stage.width;
    // let posY = Math.random() * stage.height;
