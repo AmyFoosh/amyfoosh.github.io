@@ -48,6 +48,7 @@ function init() {
 
 // CLASSES
 
+// This class is used to display objects on stage.
 class Sprite {
 
    constructor(img, x, y) {
