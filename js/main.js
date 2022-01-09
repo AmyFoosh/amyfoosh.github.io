@@ -40,8 +40,6 @@ function init() {
    // let posY = Math.random() * stage.height;
 
    ctx.drawImage(skull.img, skull.x, skull.y);
-
-   skull.y = skull.y + 10;
 }
 
 // --------------------------------------------
