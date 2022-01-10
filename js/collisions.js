@@ -30,4 +30,17 @@ function squareCollision(sprite1, sprite2) {
 
 function circularCollision(sprite1, sprite2) {
 
+    let rad1 = sprite1.width / 2;
+    let rad2 = sprite2.width / 2;
+    let radius = rad1 + rad2;
+
+    return (radius > distanceBetween(sprite1, sprite2)) ? true : false;
+}
+
+function distanceBetween(sprite1, sprite2) {
+
+    var dx = sprite1.x - sprite2.x;
+    var dy = sprite1.y - sprite2.y;
+
+    return Math.sqrt((dx * dx) + (dy * dy));
 }
