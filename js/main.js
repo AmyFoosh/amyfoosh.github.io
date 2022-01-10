@@ -2,7 +2,7 @@
 
 // ~ UTILS VARIABLES ~
 
-// Get canvas access and context to display content.
+// Get canvas access and game context to display content.
 let stage = document.getElementById("canvas");
 let ctx = stage.getContext("2d");
 
@@ -24,19 +24,23 @@ let skullArmy = [
     addSkull(),
     addSkull(),
     addSkull(),
+    addSkull(),
+    addSkull(),
+    addSkull(),
+    addSkull(),
     addSkull()
 ];
 
 // Degrees = radians * 180 / Math.Pi
 // Radians = degrees * Math.Pi / 180
 
-let speed = 8;
+let speed = 6;
 
 // --------------------------------------------
 
 function addSkull() {
 
-    let skull = new Skull(avatar, stage.width / 2, stage.height / 2, Math.random() * 360);
+    let skull = new Skull(avatar, Math.random() * stage.width, Math.random() * stage.height, Math.random() * 360);
 
     return skull;
 }
@@ -49,7 +53,6 @@ setInterval(gameLoop, fps);
 
 function gameLoop() {
 
-    // This will prevent the stage from having unnecessary images.
     clearStage();
 
     // We are going to use 2 skulls to check collisions and move them across the stage.
@@ -66,7 +69,7 @@ function gameLoop() {
             
             if (i != j) {
                 
-                if (squareCollision(skull, skull2)) {
+                if (circularCollision(skull, skull2)) {
                     
                     let angle1 = Math.atan2(skull.y - skull2.y, skull.x - skull2.x);
                     let angle2 = Math.atan2(skull2.y - skull.y, skull2.x - skull.x);
@@ -118,6 +121,6 @@ function gameLoop() {
 
 function clearStage() {
 
-    ctx.canvas.width = window.innerWidth * 0.5;
-    ctx.canvas.height = window.innerHeight * 0.5;
+    ctx.canvas.width = window.innerWidth * 0.99;
+    ctx.canvas.height = window.innerHeight * 0.99;
 }
