@@ -124,3 +124,24 @@ function clearStage() {
     ctx.canvas.width = window.innerWidth * 0.99;
     ctx.canvas.height = window.innerHeight * 0.99;
 }
+
+let elem = document.documentElement;
+
+
+function setFullscreen() {
+
+   if (elem.requestFullscreen) {
+
+      elem.requestFullscreen();
+
+   } else if (elem.webkitRequestFullscreen) {
+
+      /* Safari */
+      elem.webkitRequestFullscreen();
+
+   } else if (elem.msRequestFullscreen) {
+
+      /* IE11 */
+      elem.msRequestFullscreen();
+   }
+}
